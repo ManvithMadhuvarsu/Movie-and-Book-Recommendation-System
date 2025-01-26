@@ -66,9 +66,8 @@ This system works with publicly available datasets for movies and books, includi
 
 ## **Results**
 The system achieves high precision and recall metrics, ensuring that users receive relevant and diverse recommendations. It also provides detailed insights into user preferences, item popularity, and genre-specific trends.
-![Screenshot 2024-11-19 114646](https://github.com/user-attachments/assets/14ecf46a-46bd-4141-bb07-9162b3a37e2f)
-![Screenshot 2024-11-19 114631](https://github.com/user-attachments/assets/e3ec1117-f894-4919-85fd-5a912899cb69)
-![Screenshot 2024-11-19 114613](https://github.com/user-attachments/assets/f163e61b-5c27-4d39-837c-b955e118c8de)
 ![Screenshot 2024-11-19 114437](https://github.com/user-attachments/assets/7327687c-0162-4c91-862c-90794b8d716a)
-![Screenshot 2024-11-19 114805](https://github.com/user-attachments/assets/92944c54-ca83-4352-9b39-669d94382e89)
+![Screenshot 2024-11-19 114613](https://github.com/user-attachments/assets/f163e61b-5c27-4d39-837c-b955e118c8de)
+![Screenshot 2024-11-19 114631](https://github.com/user-attachments/assets/e3ec1117-f894-4919-85fd-5a912899cb69)
+![Screenshot 2024-11-19 114646](https://github.com/user-attachments/assets/14ecf46a-46bd-4141-bb07-9162b3a37e2f)
 
