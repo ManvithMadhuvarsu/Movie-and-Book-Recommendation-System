@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Recommendations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='recom_styles.css') }}">
+</head>
+<body>
+    <div class="comic-header">
+        <h1>SEARCH GENRES & GET RECOMMENDATIONS</h1>
+    </div>
+
+    <!-- Search bar and button -->
+    <div class="recommendations">
+        <input type="text" id="searchInput" placeholder="Genres - Language (Eg: Action, Comedy - EN)" onkeydown="if(event.key === 'Enter'){ searchRecommendations(); }">
+        <button onclick="searchRecommendations()">Get Recommendations</button>
+
+        <!-- Year Selector Dropdown (Initially hidden) -->
+        <select id="yearSelector" style="display: none;" onchange="filterByYear()">
+            <option value="" disabled selected>Select Year</option>
+        </select>
+    </div>
+    
+    <!-- Results container -->
+    <div id="results"></div>
+
+    <!-- Details modal for displaying additional information -->
+    <div id="detailsContainer" class="details-container" style="display: none;">
+        <div class="details-content">
+            <span class="close-btn" onclick="closeDetails()">×</span>
+            <div class="details-image">
+                <img id="detailImage" src="" alt="Details Image">
+            </div>
+            <div class="details-info">
+                <h2 id="detailTitle"></h2>
+                <p id="detailDescription"></p>
+                <p><strong>Release Date:</strong> <span id="detailReleaseDate"></span></p>
+    
+                <!-- Director or Author -->
+                <p id="directorContainer" style="display: none;">
+                    <strong>Director:</strong> <span id="detailDirector"></span>
+                </p>
+                <p id="authorContainer" style="display: none;">
+                    <strong>Author:</strong> <span id="detailAuthor"></span>
+                </p>
+    
+                <!-- Genres, Rating, and Language -->
+                <p><strong>Genres:</strong> <span id="detailGenres"></span></p>
+                <p><strong>Rating:</strong> <span id="detailRating"></span></p>
+                <p><strong>Language:</strong> <span id="detailLanguage"></span></p>
+                <p><strong>Available on:</strong> <span id="detailProvider"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='recom_script.js') }}" defer></script>    
+</body>
+</html>
